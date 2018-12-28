@@ -122,14 +122,16 @@ body {
   color: #33DABD;
 }
 
-.timeline-line {
-  border-right: 1px solid #98A5BB;
-  height: 98%;
-  left: 50%;
-  position: absolute;
-  top: 0;
-  width: 1px;
-  z-index: 1;
+.vertical-line {
+  background-color: #f5f5f5;
+  display: block;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: 0;
+}
+
+.vertical-line:last-child {
+  display: none;
 }
 
 .bottom-menu {
@@ -160,8 +162,6 @@ body {
 }
 
 .sidebar {
-  display: -ms-grid;
-  display: grid;
   grid-area: sidebar;
   color: white;
   padding-bottom: 100%;

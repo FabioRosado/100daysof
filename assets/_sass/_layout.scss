@@ -60,14 +60,14 @@
   }
 }
 
-.timeline-line {
-  border-right: 1px solid #98A5BB;
-  height: 98%;
-  left: 50%;
-  position: absolute;
-  top: 0;
-  width: 1px;
-  z-index: 1;
+.vertical-line {
+  background-color: #f5f5f5;
+  display: block;
+  transform: rotate(90deg);
+  margin: 0;
+  &:last-child {
+    display: none;
+  }
 }
 
 .bottom-menu {
