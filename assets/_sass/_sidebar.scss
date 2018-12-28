@@ -1,0 +1,41 @@
+.sidebar {
+  display: grid;
+  grid-area: sidebar;
+  color: white;
+  padding-bottom: 100%;
+  background: $dark-background;
+
+  .fab, .far, .fas {
+    padding-right: .5rem;
+  }
+
+  a {
+    color: white;
+  }
+
+  .avatar {
+    padding: 2.5rem 3rem;
+    background: $purple;
+  }
+
+  .social {
+    background: $turquoise;
+    padding: 1.5rem 3rem 1rem;
+  }
+
+  .menu {
+    padding: 2rem 3rem;
+    background-color: $lighter-background;
+
+    .far, .fas {
+      color: $turquoise;
+    }
+
+    a:hover {
+      background-color: $turquoise;
+      .far, .fas {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+$purple: #8067B6;
+$turquoise: #33DABD;
+$dark-background: #3F4A59;
+$lighter-background: #455160;
+$grey: #98A5BB;
+$light: #F3F5F6;
+
+body {
+  background: $light;
+  color: #3F4A59;
+  display: grid !important;
+  grid-template-areas: "sidebar content sidebar2" !important;
+  grid-template-columns: 1.5fr 4fr 1.5fr !important;
+}
+
+.is-round {
+  border-radius: 50%;
+
+}
+
+.content{
+  margin: 2rem;
+  grid-area: content;
+}
+
+.large{
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+@mixin desktop {
+  @media(min-width: 924px){
+    @content
+  }
+
+@import
+  "_sass/_layout.scss",
+  "_sass/_sidebar.scss";

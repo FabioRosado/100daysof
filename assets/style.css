@@ -1,0 +1,162 @@
+body {
+  background: #F3F5F6;
+  color: #3F4A59;
+  display: -ms-grid !important;
+  display: grid !important;
+      grid-template-areas: "sidebar content sidebar2" !important;
+  -ms-grid-columns: 1.5fr 4fr 1.5fr !important;
+      grid-template-columns: 1.5fr 4fr 1.5fr !important;
+}
+
+.is-round {
+  border-radius: 50%;
+}
+
+.content {
+  margin: 2rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: content;
+}
+
+.large {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.timeline-card {
+  background: white;
+  -webkit-box-shadow: 0px 1px 21px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 1px 21px 0px rgba(0, 0, 0, 0.07);
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-card .card-title {
+  text-align: center;
+  background: #3F4A59;
+  color: white;
+  font-weight: lighter;
+  padding: 1rem 0rem;
+}
+
+.timeline-card .card-title h2 {
+  color: white;
+  margin-bottom: .3rem;
+}
+
+.timeline-card .card-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 10fr;
+      grid-template-columns: 3fr 10fr;
+  padding: 1.5rem 2rem;
+  grid-gap: 1rem;
+}
+
+.timeline-card .card-body .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #98A5BB;
+  font-weight: lighter;
+}
+
+.timeline-card .card-bottom {
+  background-color: transparent;
+  border-top: 1px solid #dbdbdb;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #98A5BB;
+  padding: 1rem 2rem;
+}
+
+.timeline-card .card-bottom a {
+  color: #98A5BB;
+  -webkit-transition: color 86ms ease-in;
+  transition: color 86ms ease-in;
+}
+
+.timeline-card .card-bottom a:hover {
+  color: #33DABD;
+  -webkit-transition: color 86ms ease-in;
+  transition: color 86ms ease-in;
+}
+
+.timeline-card .card-bottom a:hover .fas, .timeline-card .card-bottom a:hover .far {
+  color: #8067B6;
+  -webkit-transition: color 86ms ease-in;
+  transition: color 86ms ease-in;
+}
+
+.timeline-card .card-bottom .fas, .timeline-card .card-bottom .far {
+  padding-right: .2rem;
+  -webkit-transition: color 86ms ease-in;
+  transition: color 86ms ease-in;
+  color: #33DABD;
+}
+
+.timeline-line {
+  border-right: 1px solid #98A5BB;
+  height: 98%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  z-index: 1;
+}
+
+.sidebar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+  color: white;
+  padding-bottom: 100%;
+  background: #3F4A59;
+}
+
+.sidebar .fab, .sidebar .far, .sidebar .fas {
+  padding-right: .5rem;
+}
+
+.sidebar a {
+  color: white;
+}
+
+.sidebar .avatar {
+  padding: 2.5rem 3rem;
+  background: #8067B6;
+}
+
+.sidebar .social {
+  background: #33DABD;
+  padding: 1.5rem 3rem 1rem;
+}
+
+.sidebar .menu {
+  padding: 2rem 3rem;
+  background-color: #455160;
+}
+
+.sidebar .menu .far, .sidebar .menu .fas {
+  color: #33DABD;
+}
+
+.sidebar .menu a:hover {
+  background-color: #33DABD;
+}
+
+.sidebar .menu a:hover .far, .sidebar .menu a:hover .fas {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

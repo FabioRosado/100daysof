@@ -1,0 +1,57 @@
+<div class="sidebar is-hidden-mobile">
+  <div class="avatar">
+    <img class="is-round" src="../assets/images/avatar.png" alt="{{site.author}}">
+    <h1 class="large">{{ site.author }}</h1>
+  </div>
+  <div class="social">
+      {% if site.github_username %}
+      <a href="https://github.com/{{ site.github_username }}" target="_blank">
+        <i class="fab fa-2x fa-github-square"></i>
+      </a>
+      {% endif %}
+    {% if site.devto_username %}
+    <a href="https://dev.to/{{ site.devto_username }}" target="_blank">
+      <i class="fab fa-2x fa-dev"></i>
+    </a>
+    {% endif %}
+    {% if site.twitter_username %}
+    <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+      <i class="fab fa-2x fa-twitter-square"></i>
+    </a>
+    {% endif %}
+    {% if site.linkedin_username %}
+    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+      <i class="fab fa-2x fa-linkedin"></i>
+    </a>
+    {% endif %}
+  </div>
+  <aside class="menu">
+    <ul class="menu-list">
+      <li>
+        <a href="{{site.url}}">
+            <i class="fas fa-home"></i> HOME
+        </a>
+      </li>
+      <li>
+        <a href="{{site.url}}">
+            <i class="far fa-calendar-alt"></i> TIMELINE
+        </a>
+      </li>
+      <li>
+        <a href="{{site.url}}">
+            <i class="far fa-file-alt"></i> BLOG
+        </a>
+      </li>
+      <li>
+        <a href="{{site.url}}">
+            <i class="far fa-clipboard"></i> PROJECTS
+        </a>
+      </li>
+      <li>
+        <a href="{{site.url}}">
+            <i class="fas fa-book"></i> BOOKS
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

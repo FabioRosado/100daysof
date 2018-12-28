@@ -1,0 +1,71 @@
+.timeline-card {
+  background: white;
+  box-shadow: 0px 1px 21px 0px rgba(0,0,0,0.07);
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+
+  .card-title {
+    text-align: center;
+    background: $dark-background;
+    color: white;
+    font-weight: lighter;
+    padding: 1rem 0rem;
+
+    h2 {
+      color: white;
+      margin-bottom: .3rem;
+    }
+  }
+
+  .card-body {
+    display: grid;
+    grid-template-columns: 3fr 10fr;
+    padding: 1.5rem 2rem;
+    grid-gap: 1rem;
+    .desc {
+      display: flex;
+      align-items: center;
+      color: $grey;
+      font-weight: lighter;
+    }
+  }
+  .card-bottom {
+    background-color: transparent;
+    border-top: 1px solid #dbdbdb;
+    justify-content: space-between;
+    display: flex;
+    color: $grey;
+    padding: 1rem 2rem;
+
+    a {
+      color: $grey;
+      transition: color 86ms ease-in;
+    }
+
+    a:hover {
+      color: $turquoise;
+      transition: color 86ms ease-in;
+      .fas, .far {
+        color: $purple;
+        transition: color 86ms ease-in;
+      }
+    }
+
+    .fas, .far {
+      padding-right: .2rem;
+      transition: color 86ms ease-in;
+      color: $turquoise;
+    }
+  }
+}
+
+.timeline-line {
+  border-right: 1px solid #98A5BB;
+  height: 98%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  z-index: 1;
+}
