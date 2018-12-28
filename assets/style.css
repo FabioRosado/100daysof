@@ -1,11 +1,16 @@
 body {
   background: #F3F5F6;
   color: #3F4A59;
-  display: -ms-grid !important;
-  display: grid !important;
-      grid-template-areas: "sidebar content sidebar2" !important;
-  -ms-grid-columns: 1.5fr 4fr 1.5fr !important;
-      grid-template-columns: 1.5fr 4fr 1.5fr !important;
+}
+
+@media (min-width: 924px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "sidebar content sidebar2" !important;
+    -ms-grid-columns: 1.5fr 4fr 1.5fr !important;
+        grid-template-columns: 1.5fr 4fr 1.5fr !important;
+  }
 }
 
 .is-round {
@@ -13,15 +18,28 @@ body {
 }
 
 .content {
-  margin: 2rem;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: content;
+  margin: 0;
+}
+
+@media (min-width: 924px) {
+  .content {
+    margin: 2rem;
+    grid-area: content;
+  }
 }
 
 .large {
   font-size: xx-large;
   font-weight: bold;
+}
+
+.transparent {
+  border: 0;
+  color: #33DABD;
+}
+
+.transparent:hover {
+  color: #8067B6;
 }
 
 .timeline-card {
@@ -114,11 +132,36 @@ body {
   z-index: 1;
 }
 
+.bottom-menu {
+  background: white;
+  padding: 1.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  border-top: 1px solid #98A5BB;
+}
+
+.bottom-menu a {
+  color: #33DABD;
+}
+
+.bottom-menu a:hover {
+  color: #8067B6;
+}
+
 .sidebar {
   display: -ms-grid;
   display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: sidebar;
   color: white;
   padding-bottom: 100%;

@@ -69,3 +69,22 @@
   width: 1px;
   z-index: 1;
 }
+
+.bottom-menu {
+  background: white;
+  padding: 1.5rem;
+  position: sticky;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  border-top: 1px solid #98A5BB;
+
+  a {
+    color: $turquoise;
+    &:hover {
+      color: $purple;
+    }
+  }
+}

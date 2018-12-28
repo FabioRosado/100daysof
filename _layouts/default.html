@@ -6,6 +6,44 @@
   <div class="content">
       {{content}}
   </div>
+  <div class="bottom-menu is-hidden-tablet">
+      <a href="{{site.baseurl}}">
+        <i class="fas fa-home"></i> HOME
+      </a>
+      <a href="{{site.baseurl}}/about.html">
+        <i class="fas fa-user"></i> ABOUT ME
+      </a>
+      <div class="dropdown is-up">
+          <div class="dropdown-trigger">
+            <button class="button transparent" aria-haspopup="true" aria-controls="dropdown-menu7">
+              <span><i class="fas fa-file"></i> MORE PAGES</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-up" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu7" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <a href="{{site.baseurl}}/timeline.html" class="dropdown-item">
+                  <i class="far fa-calendar-alt"></i> TIMELINE
+                </a>
+                <a href="{{site.baseurl}}/blog.html" class="dropdown-item">
+                  <i class="far fa-file-alt"></i> BLOG
+                </a>
+                <a href="{{site.baseurl}}/projects.html" class="dropdown-item">
+                  <i class="far fa-clipboard"></i> PROJECTS
+                </a>
+                <a href="{{site.baseurl}}/books.html" class="dropdown-item">
+                  <i class="fas fa-book"></i> BOOKS
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
   
 </body>
+<script src="{{site.url}}/assets/scripts/main.js"></script>
 </html>
+

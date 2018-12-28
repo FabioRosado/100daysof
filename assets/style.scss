@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+@mixin desktop {
+  @media(min-width: #{$desktop-size}) {
+    @content
+  }
+};
+
+$desktop-size: 924px;
+
 $purple: #8067B6;
 $turquoise: #33DABD;
 $dark-background: #3F4A59;
@@ -10,9 +18,11 @@ $light: #F3F5F6;
 body {
   background: $light;
   color: #3F4A59;
-  display: grid !important;
-  grid-template-areas: "sidebar content sidebar2" !important;
-  grid-template-columns: 1.5fr 4fr 1.5fr !important;
+  @include desktop {
+    display: grid;
+    grid-template-areas: "sidebar content sidebar2" !important;
+    grid-template-columns: 1.5fr 4fr 1.5fr !important;
+  }
 }
 
 .is-round {
@@ -21,8 +31,11 @@ body {
 }
 
 .content{
-  margin: 2rem;
-  grid-area: content;
+  margin: 0;
+  @include desktop {
+    margin: 2rem;
+    grid-area: content;
+  }
 }
 
 .large{
@@ -30,10 +43,13 @@ body {
   font-weight: bold;
 }
 
-@mixin desktop {
-  @media(min-width: 924px){
-    @content
+.transparent {
+  border: 0;
+  color: $turquoise;
+  &:hover {
+    color: $purple;
   }
+}
 
 @import
   "_sass/_layout.scss",
