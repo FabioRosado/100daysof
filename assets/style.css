@@ -161,6 +161,30 @@ body {
   color: #8067B6;
 }
 
+.metadata {
+  padding: .5rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #98A5BB;
+}
+
+.metadata .far {
+  color: #33DABD;
+}
+
+.post-content {
+  background: white;
+  -webkit-box-shadow: 0px 1px 21px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 1px 21px 0px rgba(0, 0, 0, 0.07);
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  padding: 2rem 3rem;
+}
+
 .sidebar {
   grid-area: sidebar;
   color: white;
@@ -206,5 +230,9 @@ body {
 
 .sidebar .menu a:hover .far, .sidebar .menu a:hover .fas {
   color: white;
+}
+
+.right-sidebar {
+  grid-area: sidebar2;
 }
 /*# sourceMappingURL=style.css.map */

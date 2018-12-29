@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% capture words %}
+{{ page.content | number_of_words }}
+{% endcapture %}
+
+<div class="timeline-card">
+    <div class="card-title">
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.subtitle }}</p>
+    </div>
+    {% if page.categories contains "log" %}
+    <div class="card-body">
+      <div class="desc">
+        Today's Progress
+      </div>
+      <div>{{ page.progress }}</div>
+      <div class="desc">Thoughts</div>
+      <div>{{ page.thoughts }}</div>
+    </div>
+      {% else %}
+    <div class="metadata">
+      <span><i class="far fa-user"></i> {{site.author}}</span>
+      <span><i class="far fa-folder-open"></i> {{page.categories}}</span>
+      <span><i class="far fa-clock"></i> {{ page.date | date: "%-d %B %Y" }}</span>
+      <span><i class="far fa-eye"></i> {{ words | plus: 250 | divided_by: 180 | append: " minutes to read" }}</span>
+    </div>
+    {% endif %}
+</div>
+
+<div class="post-content">
+  {{content}}
+</div>
