@@ -1,7 +1,6 @@
 .sidebar {
   grid-area: sidebar;
   color: white;
-  padding-bottom: 100%;
   background: $dark-background;
 
   .fab, .far, .fas {
@@ -20,6 +19,12 @@
   .social {
     background: $turquoise;
     padding: 1.5rem 3rem 1rem;
+    .fab, .far, .fas{
+      &:hover {
+        color: $purple;
+        transition: color 85ms ease-in;
+      }
+    }
   }
 
   .menu {

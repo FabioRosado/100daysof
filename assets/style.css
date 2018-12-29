@@ -164,7 +164,6 @@ body {
 .sidebar {
   grid-area: sidebar;
   color: white;
-  padding-bottom: 100%;
   background: #3F4A59;
 }
 
@@ -184,6 +183,12 @@ body {
 .sidebar .social {
   background: #33DABD;
   padding: 1.5rem 3rem 1rem;
+}
+
+.sidebar .social .fab:hover, .sidebar .social .far:hover, .sidebar .social .fas:hover {
+  color: #8067B6;
+  -webkit-transition: color 85ms ease-in;
+  transition: color 85ms ease-in;
 }
 
 .sidebar .menu {
