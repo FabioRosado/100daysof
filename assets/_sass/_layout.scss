@@ -105,4 +105,48 @@
   margin-top: -1rem;
   margin-bottom: 2rem;
   padding: 2rem 3rem;
+
+  a {
+    color: $turquoise;
+    &:hover {
+      color: $purple;
+      transition: color 85ms ease-in;
+    }
+  }
+}
+
+.project-list {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr;
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card-image {
+  background-color: $dark-background;
+}
+
+.project-header {
+  text-align: center;
+  background: $dark-background;
+  color: white;
+  font-weight: lighter;
+
+  padding: 1rem 0rem;
+
+  h2 {
+    color: white;
+    margin-bottom: .3rem;
+  }
+}
+
+.book-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

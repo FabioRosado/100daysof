@@ -19,12 +19,15 @@ body {
 
 .content {
   margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 100%;
 }
 
 @media (min-width: 924px) {
   .content {
     margin: 2rem;
     grid-area: content;
+    padding: 0;
   }
 }
 
@@ -40,6 +43,22 @@ body {
 
 .transparent:hover {
   color: #8067B6;
+}
+
+.light-text {
+  color: #98A5BB;
+}
+
+.primary-color {
+  color: #33DABD;
+}
+
+.secondary-color {
+  color: #8067B6;
+}
+
+.no-style {
+  list-style: none;
 }
 
 .timeline-card {
@@ -185,10 +204,68 @@ body {
   padding: 2rem 3rem;
 }
 
+.post-content a {
+  color: #33DABD;
+}
+
+.post-content a:hover {
+  color: #8067B6;
+  -webkit-transition: color 85ms ease-in;
+  transition: color 85ms ease-in;
+}
+
+.project-list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 924px) {
+  .project-list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card-image {
+  background-color: #3F4A59;
+}
+
+.project-header {
+  text-align: center;
+  background: #3F4A59;
+  color: white;
+  font-weight: lighter;
+  padding: 1rem 0rem;
+}
+
+.project-header h2 {
+  color: white;
+  margin-bottom: .3rem;
+}
+
+.book-list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 924px) {
+  .book-list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .sidebar {
   grid-area: sidebar;
   color: white;
   background: #3F4A59;
+  padding-bottom: 100%;
 }
 
 .sidebar .fab, .sidebar .far, .sidebar .fas {

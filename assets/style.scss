@@ -32,9 +32,12 @@ body {
 
 .content{
   margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 100%;
   @include desktop {
     margin: 2rem;
     grid-area: content;
+    padding: 0;
   }
 }
 
@@ -49,6 +52,22 @@ body {
   &:hover {
     color: $purple;
   }
+}
+
+.light-text {
+  color: $grey;
+}
+
+.primary-color {
+  color: $turquoise;
+}
+
+.secondary-color {
+  color: $purple;
+}
+
+.no-style {
+  list-style: none;
 }
 
 @import
