@@ -10,10 +10,10 @@
   <p align="center">
     An alternative way to log your progress in any of the 100DaysOfX challenge
     <br />
-    <a href="{{site.url}}/../docs"><strong>Explore the docs »</strong></a>
+    <a href="{{site.url}}/docs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://elated-mayer-b03e07.netlify.com">View Demo</a>
     ·
     <a href="https://github.com/FabioRosado/100daysof/issues">Report Bug</a>
     ·
@@ -36,7 +36,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://elated-mayer-b03e07.netlify.com)
 
 This project is meant to be an alternative way to keep track of your 100DaysOfX. It doesn't matter what you are committed to, but having a clear view of what you have worked on and achieved can be a great motivational activity.
 
@@ -149,22 +149,26 @@ Contributions are what makes the open source community such an amazing place to 
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<!-- LICENSE -->
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<!-- CONTACT -->
 ## Contact
 
 FabioRosado - [@FabioRosado_](https://twitter.com/FabioRosado_) - FabioRosado@outlook.com
 
 Project Link: [https://github.com/fabiorosado/100daysof](https://github.com/fabiorosado/100daysof)
 
+## Acknowledgements
+
+* [othneildrew - For the awesome readme template](https://github.com/othneildrew/Best-README-Template)
+* [cagrimmett - For the cool calendar](https://github.com/cagrimmett/jekyll-tools)
+* [Long Qian - For the post on tags](http://longqian.me/2017/02/09/github-jekyll-tag/)
+* [Jason Leung - for the cool placeholder image](https://unsplash.com/@ninjason)
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
 [license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: https://github.com/FabioRosado/100daysof/blob/master/LICENSE
-[product-screenshot]: https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/screenshot.png
+[product-screenshot]: https://github.com/FabioRosado/100daysof/assets/images/100daysof.png

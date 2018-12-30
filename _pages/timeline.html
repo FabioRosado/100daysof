@@ -13,9 +13,9 @@ permalink: /timeline
     <div class="desc">
       Today's Progress
     </div>
-    <div>{{ post.progress }}</div>
+    <div>{{ post.progress | truncate: 136 }}</div>
     <div class="desc">Thoughts</div>
-    <div>{{ post.thoughts }}</div>
+    <div>{{ post.thoughts | truncate: 136 }}</div>
   </div>
 
   <div class="card-bottom">
