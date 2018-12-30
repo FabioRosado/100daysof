@@ -9,7 +9,11 @@ permalink: /projects
           <div class="card">
             <a href="{{post.url}}">
               <div class="card-image">
-                <img src="{{post.image}}" alt="{{post.title}}">
+                {% if post.image %}
+                  <img src="{{post.image}}" alt="{{post.title}}">
+                {% else %}
+                  <img src="{{site.url}}/assets/images/jason-leung-705076-unsplash.jpg">
+                {% endif %}
               </div>
               <div class="project-header">
                   <h2>{{post.title}}</h2>
@@ -18,7 +22,7 @@ permalink: /projects
             </a>
               <div class="card-content">
                 <div class="contents">
-                  {{ post.excerpt }}
+                  {{ post.excerpt | limit: 136 }}
                 </div>
               </div>
               <footer class="card-footer">
