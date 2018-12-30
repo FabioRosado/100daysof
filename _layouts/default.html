@@ -46,5 +46,75 @@
   
 </body>
 <script src="{{site.url}}/assets/scripts/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+
+
+<!-- Needed for the calendar -->
+<script type="text/javascript">
+
+  var calData = {% assign counter = 0 %}{
+  {% for post in site.categories['log'] %}{% capture day %}{{ post.date | date: '%s' }}{% endcapture %}{% capture prevday %}{{ post.previous.date | date: '%s' }}{% endcapture %}{% assign counter = counter | plus: 1 %}{% if day != prevday %}"{{ post.date | date: '%s' }}": {{ counter }}{% assign counter = 0 %}{% if forloop.last == false %},{% endif %}
+  {% endif %}{% endfor %}};
+  
+  
+  var responsiveCal = function( options ) {
+    var now = new Date();
+      options.start = now.setMonth(now.getMonth());
+      options.range = 1;
+      options.cellSize = 25;
+
+      if( typeof cal === "object" ) {
+          $('#cal-heatmap').html('');
+          cal = cal.destroy();
+      }
+      cal = new CalHeatMap();
+      cal.init( options );
+  
+  }
+  caloptions = {
+    itemSelector: "#cal-heatmap",
+    domain: "month",
+    subDomain: "x_day",
+    data: calData,
+    dataType: "json",
+    cellPadding: 5,
+    cellRadius: 7,
+    domainGutter: 20,
+    displayLegend: false,
+    range: 4,
+    considerMissingDataAsZero:false,
+    domainDynamicDimension: true,
+    previousSelector: "#cal-heatmap-PreviousDomain-selector",
+    nextSelector: "#cal-heatmap-NextDomain-selector",
+    domainLabelFormat: function(date) {
+      moment.locale("en");
+      return moment(date).format("MMMM").toUpperCase();
+    },
+    subDomainTextFormat: "%d",
+    legend: [0,1,2,3],
+    label: {
+      position: "top"
+    }
+  };
+  
+  
+  // run first time, put in load if your scripts are in footer
+  responsiveCal( caloptions );
+  
+  $(window).resize(function() {
+      if(this.resizeTO) clearTimeout(this.resizeTO);
+      this.resizeTO = setTimeout(function() {
+          $(this).trigger('resizeEnd');
+      }, 500);
+  });
+  
+  //resize on resizeEnd function
+  $(window).bind('resizeEnd', function() {
+     responsiveCal( cal.options );
+  });
+  </script>
 </html>
 
