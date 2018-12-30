@@ -1,18 +1,69 @@
 <div class="right-sidebar">
   <div class="calendar" id="calendar">
-      <a href="#"  id="cal-heatmap-PreviousDomain-selector"><i class="fas fa-angle-double-left"></i></a>
-      <a href="#" id="cal-heatmap-NextDomain-selector"><i class="fas fa-angle-double-right"></i></a>
+      <a id="cal-heatmap-PreviousDomain-selector"><i class="fas fa-angle-double-left"></i></a>
+      <a id="cal-heatmap-NextDomain-selector"><i class="fas fa-angle-double-right"></i></a>
     	<div id="cal-heatmap"></div>
-	</div>
-
   </div>
-  <div class="books">
+  
+  <div class="posts sidebar-section">
+      <h1 class="sidebar-title">LATEST POSTS</h1>
+    {% for post in site.categories['blog'] limit: 3 %}
+    <ul class="align-left">
+      <li class="no-style">
+          <i class="fas fa-caret-right"></i> <a href="{{post.url}}">{{post.title}}</a>
+      </li>
+    </ul>
+    
+    {% endfor %}  
+  </div>
+
+  <div class="books sidebar-section">
+    <h1 class="sidebar-title">CURRENTLY READING</h1>
+    {% for book in site.categories['book'] limit: 3 %}
+      <p class="is-size-7">{{book.title}}</p>
+      <progress class="progress is-small is-primary" value="{{book.read}}" max="100">{{book.read}}%</progress>
+    {% endfor %}
 
   </div>
   <div class="achievments">
 
   </div>
-  <div class="tags">
+  <div class="post-tags sidebar-section">
+      <h1 class="sidebar-title">TAGS</h1>
+      {% assign rawtags = "" %}
+      {% for post in site.posts %}
+        {% assign ttags = post.tags | join:'|' | append:'|' %}
+        {% assign rawtags = rawtags | append:ttags %}
+      {% endfor %}
+      {% assign rawtags = rawtags | split:'|' | sort %}
+      
+      {% assign site.tags = "" %}
+      {% for tag in rawtags %}
+        {% if tag != "" %}
+          {% if tags == "" %}
+            {% assign tags = tag | split:'|' %}
+          {% endif %}
+          {% unless tags contains tag %}
+            {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+     
+
+      {% capture temptags %}
+  {% for tag in site.tags %}
+    {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+{% for temptag in sortedtemptags %}
+  {% assign tagitems = temptag | split: '#' %}
+  {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
+  <span class="tag is-primary">{{ tagname }}</span>
+{% endfor %}
+
+
+
 
   </div>
 </div>

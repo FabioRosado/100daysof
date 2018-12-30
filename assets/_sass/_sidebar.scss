@@ -49,4 +49,34 @@
   grid-area: sidebar2;
   margin-top: 2rem;
   margin-right: 1rem;
+
+  .sidebar-title {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .sidebar-section {
+    margin-top: 2rem;
+    background-color: white;
+    box-shadow: 0px 1px 21px 0px rgba(0, 0, 0, 0.07);
+    padding: 1rem;
+    text-align: center;
+  }
+  .tag {
+    background-color: $turquoise;
+  }
+  
+  .posts {
+    a {
+      color: $dark-background;
+      &:hover {
+        color: $turquoise;
+      }
+    }
+    .fas {
+      color: $turquoise;
+    }
+  }
 }
