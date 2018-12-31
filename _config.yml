@@ -22,10 +22,11 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 author: John Doe # This should be your name
-twitter_username:  jekyllrb
-github_username:   jekyll
-devto_username:    jekyllrb
-linkedin_username: jekyllrb
+avatar: avatar.png # This should be the file name of your avatar located in assets/images
+twitter_username:  100daysof
+github_username:   FabioRosado/100daysof
+devto_username:    100daysof
+linkedin_username: 100daysof
 
 # Build settings
 markdown: kramdown

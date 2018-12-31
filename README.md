@@ -10,7 +10,7 @@
   <p align="center">
     An alternative way to log your progress in any of the 100DaysOfX challenge
     <br />
-    <a href="{{site.url}}/docs"><strong>Explore the docs »</strong></a>
+    <a href="https://elated-mayer-b03e07.netlify.com/docs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://elated-mayer-b03e07.netlify.com">View Demo</a>
@@ -171,4 +171,4 @@ Project Link: [https://github.com/fabiorosado/100daysof](https://github.com/fabi
 [contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
 [license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: https://github.com/FabioRosado/100daysof/blob/master/LICENSE
-[product-screenshot]: https://github.com/FabioRosado/100daysof/assets/images/100daysof.png
+[product-screenshot]: https://github.com/FabioRosado/100daysof/blob/master/assets/images/100daysof.png?raw=true

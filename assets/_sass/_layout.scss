@@ -44,10 +44,10 @@
     }
 
     a:hover {
-      color: $turquoise;
+      color: $primary-color;
       transition: color 86ms ease-in;
       .fas, .far {
-        color: $purple;
+        color: $secondary-color;
         transition: color 86ms ease-in;
       }
     }
@@ -55,7 +55,7 @@
     .fas, .far {
       padding-right: .2rem;
       transition: color 86ms ease-in;
-      color: $turquoise;
+      color: $primary-color;
     }
   }
 }
@@ -82,9 +82,9 @@
   border-top: 1px solid #98A5BB;
 
   a {
-    color: $turquoise;
+    color: $primary-color;
     &:hover {
-      color: $purple;
+      color: $secondary-color;
     }
   }
 }
@@ -95,7 +95,7 @@
   justify-content: space-between;
   color: $grey;
   .far {
-    color: $turquoise;
+    color: $primary-color;
   }
 }
 
@@ -106,9 +106,9 @@
   padding: 2rem 3rem;
 
   a {
-    color: $turquoise;
+    color: $primary-color;
     &:hover {
-      color: $purple;
+      color: $secondary-color;
       transition: color 85ms ease-in;
     }
   }

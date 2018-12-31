@@ -14,15 +14,15 @@
 
   .avatar {
     padding: 2.5rem 3rem;
-    background: $purple;
+    background: $secondary-color;
   }
 
   .social {
-    background: $turquoise;
+    background: $primary-color;
     padding: 1.5rem 3rem 1rem;
     .fab, .far, .fas{
       &:hover {
-        color: $purple;
+        color: $secondary-color;
         transition: color 85ms ease-in;
       }
     }
@@ -33,11 +33,11 @@
     background-color: $lighter-background;
 
     .far, .fas {
-      color: $turquoise;
+      color: $primary-color;
     }
 
     a:hover {
-      background-color: $turquoise;
+      background-color: $primary-color;
       .far, .fas {
         color: white;
       }
@@ -65,18 +65,18 @@
     text-align: center;
   }
   .tag {
-    background-color: $turquoise;
+    background-color: $primary-color;
   }
   
   .posts {
     a {
       color: $dark-background;
       &:hover {
-        color: $turquoise;
+        color: $primary-color;
       }
     }
     .fas {
-      color: $turquoise;
+      color: $primary-color;
     }
   }
 }
