@@ -34,11 +34,11 @@ body {
 .content{
   margin: 0;
   padding-top: 3rem;
-  padding-bottom: 100%;
   @include desktop {
     margin: 2rem;
     grid-area: content;
     padding: 0;
+    min-width: 0;
   }
 }
 
@@ -49,9 +49,9 @@ body {
 
 .transparent {
   border: 0;
-  color: $turquoise;
+  color: $primary-color;
   &:hover {
-    color: $purple;
+    color: $secondary-color;
   }
 }
 
@@ -60,11 +60,11 @@ body {
 }
 
 .primary-color {
-  color: $turquoise;
+  color: $primary-color;
 }
 
 .secondary-color {
-  color: $purple;
+  color: $secondary-color;
 }
 
 .no-style {

@@ -22,7 +22,7 @@ layout: default
       {% else %}
     <div class="metadata">
       <span><i class="far fa-user"></i> {{site.author}}</span>
-      <span><i class="far fa-folder-open"></i> {{page.categories}}</span>
+      <span><i class="far fa-folder-open"></i> {{page.categories | last}}</span>
       <span><i class="far fa-clock"></i> {{ page.date | date: "%-d %B %Y" }}</span>
       <span><i class="far fa-eye"></i> {{ words | plus: 250 | divided_by: 180 | append: " minutes to read" }}</span>
     </div>

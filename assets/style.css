@@ -20,7 +20,6 @@ body {
 .content {
   margin: 0;
   padding-top: 3rem;
-  padding-bottom: 100%;
 }
 
 @media (min-width: 924px) {
@@ -28,6 +27,7 @@ body {
     margin: 2rem;
     grid-area: content;
     padding: 0;
+    min-width: 0;
   }
 }
 
@@ -158,7 +158,7 @@ body {
   padding: 1.5rem;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 4;
+  z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +237,7 @@ body {
   background: #3F4A59;
   color: white;
   font-weight: lighter;
-  padding: 1rem 0rem;
+  padding: 1rem .5rem;
 }
 
 .project-header h2 {

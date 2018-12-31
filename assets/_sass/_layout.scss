@@ -74,7 +74,7 @@
   background: white;
   padding: 1.5rem;
   position: sticky;
-  z-index: 4;
+  z-index: 20;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,7 +133,7 @@
   color: white;
   font-weight: lighter;
 
-  padding: 1rem 0rem;
+  padding: 1rem .5rem;
 
   h2 {
     color: white;
