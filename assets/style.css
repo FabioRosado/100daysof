@@ -364,7 +364,12 @@ body {
 .right-sidebar {
   grid-area: sidebar2;
   margin-top: 2rem;
-  margin-right: 1rem;
+}
+
+@media (min-width: 924px) {
+  .right-sidebar {
+    margin-right: 1rem;
+  }
 }
 
 .right-sidebar .sidebar-title {
