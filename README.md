@@ -10,7 +10,7 @@
   <p align="center">
     An alternative way to log your progress in any of the 100DaysOfX challenge
     <br />
-    <a href="https://elated-mayer-b03e07.netlify.com/docs"><strong>Explore the docs »</strong></a>
+    <a href="https://elated-mayer-b03e07.netlify.com/blog/documentation/2018/12/31/gettingstarted.html"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://elated-mayer-b03e07.netlify.com">View Demo</a>
