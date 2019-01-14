@@ -1,0 +1,24 @@
+<!-- Created by FabioRosado(https://github.com/FabioRosado) for 100DaysOf Project - https://github.com/FabioRosado/100daysof -->
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-Book-1">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Book-1" clip-path="url(#clip-Book-1)">
+    <rect width="50" height="50" fill="#fff"/>
+    <g id="Group_51" data-name="Group 51">
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="24" cy="24" r="24" transform="translate(1 1)" fill="#c2d5d8"/>
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M-2023.349-206.319a24,24,0,0,1-7.243-1.112l-4.758-6.314v-13.992l23.442-18.984,12.541,15.487c.011.305.017.613.017.915a23.851,23.851,0,0,1-1.886,9.342,23.919,23.919,0,0,1-5.143,7.629,23.918,23.918,0,0,1-7.629,5.143A23.848,23.848,0,0,1-2023.349-206.319Z" transform="translate(2048.35 255.319)" fill="#93a4a7"/>
+      <g id="Group_49" data-name="Group 49" transform="translate(0 0.163)">
+        <rect id="Rectangle_27" data-name="Rectangle 27" width="24.958" height="34.558" rx="2" transform="translate(12 7.5)" fill="#233540"/>
+        <path id="Rectangle_29" data-name="Rectangle 29" d="M2,0H3.84a0,0,0,0,1,0,0V34.558a0,0,0,0,1,0,0H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" transform="translate(12 7.5)" fill="#cc584c"/>
+        <path id="Rectangle_28" data-name="Rectangle 28" d="M2,0H24a0,0,0,0,1,0,0V4.8a0,0,0,0,1,0,0H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" transform="translate(12.96 35.338)" fill="#f5f5f5"/>
+        <rect id="Rectangle_30" data-name="Rectangle 30" width="14.399" height="4.8" transform="translate(18.72 11.34)" fill="#f5f5f5"/>
+        <path id="Rectangle_31" data-name="Rectangle 31" d="M1.92,0H24a0,0,0,0,1,0,0V1.92a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0v0A1.92,1.92,0,0,1,1.92,0Z" transform="translate(12.96 35.338)" fill="#ded9d9"/>
+      </g>
+      <text id="_1" data-name="1" transform="translate(25.5 31.5)" fill="#33dabd" stroke="#29b59d" stroke-width="1" font-size="15" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="-4.343" y="0">1</tspan></text>
+    </g>
+  </g>
+</svg>
