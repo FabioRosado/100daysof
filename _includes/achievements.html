@@ -1,0 +1,96 @@
+
+  {% comment %}
+    This bit will be rather huge. The achievments will be given depending on the amount
+    of posts available and tags used. I will try to divide everything by category to 
+    make things easier.
+  {% endcomment %}
+
+  {% assign log = site.categories.log | size %}
+    {% if log > 1 and log < 10 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-1.svg" title="1 day logged. Good start!" alt="1 Day Logged">
+    {% elsif log > 10 and log < 20 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-10.svg" title="10 days logged. Good job!" alt="10 Days Logged">
+    {% elsif log > 20 and log < 30 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-20.svg" title="20 days logged. Keep working on your goals." alt="20 Days Logged">
+    {% elsif log > 30 and log < 40 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-30.svg" title="30 days logged. That's like one log a day for a month!" alt="30 Days Logged">
+    {% elsif log > 40 and log < 50 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-40.svg" title="40 days logged. You are so close to half way!" alt="40 Days Logged">
+    {% elsif log > 50 and log < 60 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-50.svg" title="50 days logged. Half way there!" alt="50 Days Logged">
+    {% elsif log > 60 and log < 70 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-60.svg" title="60 days logged. Things are getting interesting now!" alt="60 Days Logged">
+    {% elsif log > 70 and log < 80 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-70.svg" title="70 days logged. You got this!" alt="70 Days Logged">
+    {% elsif log > 80 and log < 90 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-80.svg" title="80 days logged. Less than a month, until 100 days logged :D" alt="80 Days Logged">
+    {% elsif log > 90 and log < 100 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-90.svg" title="90 days logged. You are soooooo close!" alt="90 Days Logged">
+    {% elsif log > 100 and log < 200 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-100.svg" title="100 days logged. Awesome work, you did it! Can you go higher?" alt="100 Days Logged">
+    {% elsif log > 200 and log < 300 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-200.svg" title="200 days logged. Simply amazing, you did it again!" alt="200 Days Logged">
+    {% elsif log > 300 and log < 365 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-300.svg" title="300 days logged. Third time's the charm, let's aim for a whole year :D" alt="300 Days Logged">
+    {% elsif log > 365 %}
+    <img src="{{site.url}}/assets/achievements/log/Log-365.svg" title="365 days logged. WOW! This is simply amazing, you logged the equivalent of one per day for a whole month!" alt="365 Days Logged">
+  {% endif %}
+
+  {% assign blog = site.categories.blog | size %}
+  {% if blog > 10 and blog < 20 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-10.svg" title="10 blog posts written. Good start!" alt="10 Blog Posts">
+  {% elsif blog > 20 and blog < 30 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-20.svg" title="20 blog posts written. Getting the hang of it now." alt="20 Blog Posts">
+  {% elsif blog > 30 and blog < 40 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-30.svg" title="30 blog posts written. Such a good amount." alt="30 Blog Posts">
+  {% elsif blog > 40 and blog < 50 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-40.svg" title="40 blog posts written. Like to write much?" alt="40 Blog Posts">
+  {% elsif blog > 50 and blog < 60 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-50.svg" title="50 blog posts written. Shall we aim higher?" alt="50 Blog Posts">
+  {% elsif blog > 60 and blog < 70 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-60.svg" title="60 blog posts written. That's like 5 blog posts per month." alt="60 Blog Posts">
+  {% elsif blog > 70 and blog < 80 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-70.svg" title="70 blog posts written. Writting is easy now!" alt="70 Blog Posts">
+  {% elsif blog > 80 and blog < 90 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-80.svg" title="80 blog posts written. Like to write much?" alt="80 Blog Posts">
+  {% elsif blog > 90 and blog < 100 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-90.svg" title="90 blog posts written. 10 more and you'll reach triple digits :D" alt="90 Blog Posts">
+  {% elsif blog > 100 and blog < 200 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-100.svg" title="100 blog posts written. Simply amazing!" alt="100 Blog Posts">
+  {% elsif blog > 200 and blog < 300 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-200.svg" title="200 blog posts written. Can you go higher?" alt="200 Blog Posts">
+  {% elsif blog > 300 and blog < 365 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-300.svg" title="300 blog posts written. You are like a writting master :D" alt="300 Blog Posts">
+  {% elsif blog > 365 %}
+  <img src="{{site.url}}/assets/achievements/blog/Blog-365.svg" title="365 blog posts written. WOW! That's one blog post per day!" alt="365 Blog Posts">
+  {% endif %}
+  
+  {% assign books = site.categories.book | size %}
+  {% if books >= 1 and books < 5 %}
+  <img src="{{site.url}}/assets/achievements/books/Book-1.svg" title="1 book read. Good start!" alt="Read 1 book">
+  {% elsif books > 5 and books < 10 %}
+  <img src="{{site.url}}/assets/achievements/books/Book-5.svg" title="5 books read. Great way to solidify your knowledge." alt="Read 5 books">
+  {% elsif books > 10 and books < 20 %}
+  <img src="{{site.url}}/assets/achievements/books/Book-10.svg" title="10 books read. You must really like to read uh?" alt="Read 10 books">
+  {% elsif books > 12 and books < 20 %}
+  <img src="{{site.url}}/assets/achievements/books/Book-12.svg" title="12 books read. One book per month, this is amazing!" alt="Read 12 books">
+  {% elsif books > 24 and books < 48 %}
+  <img src="{{site.url}}/assets/achievements/books/Book-24.svg" title="24 books read. Boom! You read 2 books per month!" alt="Read 24 books">
+  {% elsif books > 48 %}
+  <img src="{{site.url}}/assets/achievements/books/Book-48.svg" title="48 books read. WOW! I'm speechless, you read the equivalent of 4 books per month!" alt="Read 48 books">
+  {% endif %}
+
+  {% assign projects = site.categories.project | size %}
+  {% if projects >= 1 and projects < 5 %}
+  <img src="{{site.url}}/assets/achievements/projects/Project-1.svg" title="1 Project created. Great start! Remember that Rome wasn't created in a day." alt="1 Project Created">
+  {% elsif projects > 5 and projects < 10 %}
+  <img src="{{site.url}}/assets/achievements/projects/Project-5.svg" title="5 Projects created. Your portfolio is starting to look good :D" alt="5 Projects Created">
+  {% elsif projects > 10 and projects < 12 %}
+  <img src="{{site.url}}/assets/achievements/projects/Project-10.svg" title="10 Projects created. Gaining momentum, aim for the stars!" alt="10 Projects Created">
+  {% elsif projects > 12 and projects < 24 %}
+  <img src="{{site.url}}/assets/achievements/projects/Project-12.svg" title="12 Projects created. Great work, this is equivalent to 1 project per month." alt="12 Projects Created">
+  {% elsif projects > 24 and projects < 48 %}
+  <img src="{{site.url}}/assets/achievements/projects/Project-24.svg" title="24 Projects created. Simply amazing! Don't forget to share your awesome work :D" alt="24 Projects Created">
+  {% elsif projects > 48 %}
+  <img src="{{site.url}}/assets/achievements/projects/Project-48.svg" title="48 Projects created. WOW! You are a machine!" alt="48 Projects Created">
+  {% endif %}
