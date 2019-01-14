@@ -68,6 +68,10 @@
   &:last-child {
     display: none;
   }
+  @include desktop {
+    margin-left: 34%;
+    width: 29%;
+  }
 }
 
 .bottom-menu {

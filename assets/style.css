@@ -153,6 +153,13 @@ body {
   display: none;
 }
 
+@media (min-width: 924px) {
+  .vertical-line {
+    margin-left: 34%;
+    width: 29%;
+  }
+}
+
 .bottom-menu {
   background: white;
   padding: 1.5rem;
