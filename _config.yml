@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 100Daysof
-email: your-email@example.com
+title: 100DaysofCode - zeebear
+email: zeebear21@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -24,8 +24,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 author: John Doe # This should be your name
 avatar: avatar.png # This should be the file name of your avatar located in assets/images
 twitter_username:  100daysof
-github_username:   FabioRosado/100daysof
-devto_username:    100daysof
+github_username:   zeebear
+devto_username:    zeebear
 linkedin_username: 100daysof
 
 # Build settings
