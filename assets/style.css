@@ -46,7 +46,7 @@ body {
 }
 
 .light-text {
-  color: #98A5BB;
+  color: #6A7486;
 }
 
 .primary-color {
@@ -74,7 +74,7 @@ body {
   text-align: center;
   background: #3F4A59;
   color: white;
-  font-weight: lighter;
+  font-weight: light;
   padding: 1rem 0rem;
 }
 
@@ -99,8 +99,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #98A5BB;
-  font-weight: lighter;
+  color: #6A7486;
+  font-weight: light;
 }
 
 .timeline-card .card-bottom {
@@ -112,12 +112,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #98A5BB;
+  color: #6A7486;
   padding: 1rem 2rem;
 }
 
 .timeline-card .card-bottom a {
-  color: #98A5BB;
+  color: #6A7486;
   -webkit-transition: color 86ms ease-in;
   transition: color 86ms ease-in;
 }
@@ -195,7 +195,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #98A5BB;
+  color: #6A7486;
 }
 
 .metadata .far {
@@ -243,7 +243,7 @@ body {
   text-align: center;
   background: #3F4A59;
   color: white;
-  font-weight: lighter;
+  font-weight: light;
   padding: 1rem .5rem;
 }
 
@@ -304,7 +304,7 @@ body {
 }
 
 #calendar a {
-  color: #98A5BB;
+  color: #6A7486;
 }
 
 #calendar #cal-heatmap-PreviousDomain-selector {
