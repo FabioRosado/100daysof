@@ -30,7 +30,7 @@ linkedin_username: 100daysof
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
