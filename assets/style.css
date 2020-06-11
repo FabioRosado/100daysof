@@ -36,6 +36,10 @@ body {
   font-weight: bold;
 }
 
+.center-author{
+  text-align: center;
+}
+
 .transparent {
   border: 0;
   color: #33DABD;
@@ -338,11 +342,13 @@ body {
 .sidebar .avatar {
   padding: 2.5rem 3rem;
   background: #8067B6;
+  text-align: center;
 }
 
 .sidebar .social {
   background: #33DABD;
   padding: 1.5rem 3rem 1rem;
+  text-align: center;
 }
 
 .sidebar .social .fab:hover, .sidebar .social .far:hover, .sidebar .social .fas:hover {
@@ -352,7 +358,9 @@ body {
 }
 
 .sidebar .menu {
-  padding: 2rem 3rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
   background-color: #455160;
 }
 
@@ -370,7 +378,8 @@ body {
 
 .right-sidebar {
   grid-area: sidebar2;
-  margin-top: 2rem;
+  margin-top: -1rem;
+  padding: 3rem;
 }
 
 @media (min-width: 924px) {
